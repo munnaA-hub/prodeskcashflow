@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Flow Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Cash Flow Tracker</h1>
+
+        <section class="card">
+            <h2>Salary</h2>
+
+            <label for="salary">Enter Salary</label>
+            <input id="salary" type="number" placeholder="Enter salary">
+
+            <button id="salary-btn">Save Salary</button>
+        </section>
+
+        <section class="card">
+            <h2>Add Expense</h2>
+
+            <label for="expense-name">Expense Name</label>
+            <input id="expense-name" type="text" placeholder="Expense name">
+
+            <label for="expense-amount">Expense Amount</label>
+            <input id="expense-amount" type="number" placeholder="Amount">
+
+            <button id="expense-btn">Add Expense</button>
+        </section>
+
+        <section class="card dashboard">
+            <p>Total Salary: ₹<span id="total-salary">0</span></p>
+
+            <p>Total Expenses: ₹<span id="total-expenses">0</span></p>
+
+            <p>Remaining Balance: ₹<span id="balance">0</span></p>
+
+            <p id="warning"></p>
+
+            <select id="currency">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+            </select>
+        </section>
+
+        <section class="card">
+            <h2>Expenses</h2>
+
+            <p id="empty-message">No expenses added yet</p>
+
+            <ul id="expense-list"></ul>
+        </section>
+
+        <section class="card">
+            <canvas id="expense-chart"></canvas>
+        </section>
+
+        <button id="download-report">Download Report</button>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
