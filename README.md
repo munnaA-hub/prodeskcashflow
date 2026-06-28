@@ -1,15 +1,13 @@
-# Cash Flow Tracker
+# Prodesk IT - Cash Flow Tracker
 
-A simple frontend web app to track your salary, log expenses, and manage your budget dynamically.
+Fully interactive client-side financial tracking module built to manage personal income and expenditures.
 
-## 🚀 Features
-* **Dashboard:** Tracks Total Salary, Expenses, and Balance.
-* **Charts:** Interactive Pie Chart for breakdown (Chart.js).
-* **Currency:** Live INR (₹) and USD ($) conversion via API.
-* **PDF Report:** Download a quick cash summary (jsPDF).
-* **Storage:** Data saves automatically on page refresh.
-* **Alerts:** Gives a low-balance warning under 10%.
+Project Features:
 
-## 🛠️ Tech Stack
-* HTML5, CSS3, JavaScript (ES6)
-* Chart.js & jsPDF Libraries
+* Base MVP layout elements with dynamic balance tracking and low balance alert limits.
+* Phase 2 Optimization: Real-time pie chart data visualization, multi-currency conversion module, and automatic local storage persistence.
+
+Production Links:
+
+* Live Website URL: https://prodeskcashflow.vercel.app
+* GitHub Repository: https://github.com/munnaA-hub/prodeskcashflow
